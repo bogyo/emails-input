@@ -44,5 +44,5 @@ Demo site avaliable here:
 ### Build
 
 1. `npm run build` 
-1. Built version will be found under `dist` directory
+1. Built version will be found under `docs` directory (for github pages)
 
