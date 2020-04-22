@@ -45,9 +45,9 @@ export default class EmailsInput {
     const blockClass = 'emails-input__block';
     const validityClass = isValid ? 'valid' : 'invalid';
 
-    const classList = `${blockClass} ${blockClass}--${validityClass}`;
+    const classes = `${blockClass} ${blockClass}--${validityClass}`;
 
-    block.classList = classList;
+    block.className = classes;
     block.textContent = email;
 
     const removeBtn = document.createElement('button');
