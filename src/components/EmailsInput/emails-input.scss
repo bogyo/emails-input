@@ -1,0 +1,63 @@
+.emails-input {
+  width: 100%;
+  height: 96px;
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  padding: 8px 7px;
+  border: 1px solid #c3c2Cf;
+  border-radius: 4px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  background: #fff;
+  overflow-y: auto;
+
+  &__block {
+    height: 24px;
+    margin: 0 8px 4px 0;
+     
+    &--valid {
+      padding: 0 7px 0 10px;
+      border-radius: 100px; 
+      background: rgba(102, 153, 255, 0.2);
+    }
+
+    &--invalid {
+      border-bottom: 1px dashed #d92929;
+    }
+  }
+
+  &__remove-btn {
+    width: 8px;
+    height: 8px;
+    border: none;
+    outline: none;
+    vertical-align: middle;
+    background: url('data:image/svg+xml,<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0.8L7.2 0L4 3.2L0.8 0L0 0.8L3.2 4L0 7.2L0.8 8L4 4.8L7.2 8L8 7.2L4.8 4L8 0.8Z" fill="#050038"/>
+    </svg>') center center no-repeat;
+    cursor: pointer;
+  }
+
+  &__input {
+    display: inline-block;
+    min-width: auto;
+    max-width: 100%;
+    height: 24px;
+    flex-grow: 1;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-size: 14px;
+
+    &::placeholder,
+    &::-webkit-input-placeholder,
+    &::-ms-input-placeholder  {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      color: #c3c2cf;
+    }
+  }
+}
+
