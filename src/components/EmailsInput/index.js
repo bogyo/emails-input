@@ -13,7 +13,7 @@ export default class EmailsInput {
 
     input.placeholder = placeholder || '';
 
-    component.append(input);
+    component.appendChild(input);
     elem.appendChild(component);
 
     this.component = component;
