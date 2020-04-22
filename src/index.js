@@ -28,11 +28,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     alert(msg);
   });
-  // avaliable method replaceEmail 
+  /* avaliable method replaceEmail 
   document.querySelector(".btn-replace").addEventListener("click",() => {
     const emailsLength = emailsInputInstance.getAllEmails().length;
 
     const emailList = [...Array(emailsLength)].map((_, i) => generateRandomEmail());
     emailsInputInstance.replaceEmail(emailList);   
-  }); 
+  }); */
 });
