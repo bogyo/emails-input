@@ -1,6 +1,6 @@
 # Miro frontend assessment - EmailsInput
 
-Demo site avaliable here: https://bogyo.github.io/emails-input/
+Demo site avaliable here: https://bogyo.github.io/emails-input
 
 ## Example Usage
 
@@ -31,7 +31,7 @@ Demo site avaliable here: https://bogyo.github.io/emails-input/
 
 **placeholder** | *string* | input placeholder text | not required <br />
 **className** | *string* | additional component class name(s) | not required <br />
-**function** | *function* | callback function for email list changes, returning an array with entered emails and the validity of the emails | not required
+**onChange** | *function* | callback function for email list changes (add, replace, remove), returns an array with entered emails and the validity of the emails  ```[{email: string, isValid: bool }]``` | not required
 
 **addEmail(string || array(strings))** | *function* | validates then add the given string or array of strings to the emaiList and display it/them in the emailsInput component <br />
 **replaceEmail(string || array(strings))** | *function* | removes the already entered emails from the emailList and emailsInput component and add the given string or array of strings to the emaiList and display it in the emailsInput component <br />
