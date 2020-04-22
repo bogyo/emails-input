@@ -35,7 +35,7 @@ Demo site avaliable here:
 
 **addEmail(string || array(strings))** *function* | validates then add the given string or array of strings to the emaiList and display it/them in the emailsInput component <br />
 **replaceEmail(string || array(strings))** *function* | removes the already entered emails from the emailList and emailsInput component and add the given string or array of strings to the emaiList and display it in the emailsInput component <br />
-**getAllEmails()** *function* returns all entered email in a list of objects and their validity. ```js [{email: string, isValid: bool }]```
+**getAllEmails()** *function* returns all entered email in a list of objects and their validity. ```[{email: string, isValid: bool }]```
 
 ## Local development
 
