@@ -12,6 +12,7 @@ export default class EmailsInput {
     input.className = 'emails-input__input';
 
     input.placeholder = placeholder || '';
+    input.type = 'text';
 
     component.appendChild(input);
     elem.appendChild(component);
@@ -28,7 +29,7 @@ export default class EmailsInput {
     component.addEventListener('click', () => input.focus());
     input.addEventListener('keydown', this.onKeyDown);
     input.addEventListener('blur', this.onBlur);
-    input.addEventListener('paste', this.onPaste);
+    input.addEventListener('input', this.onInput);
   }
 
   validateEmail(email){
@@ -141,24 +142,18 @@ export default class EmailsInput {
     return this.addEmailByInput(input);
   }
 
-  onPaste = e => {
-    e.stopPropagation();
-    e.preventDefault();
+  onInput = e => {
     const input = e.target;
-  
-    if(e.clipboardData && e.clipboardData.getData) {
-      let pastedText = '';
-      if (window.clipboardData && window.clipboardData.getData) { // IE
-          pastedText = window.clipboardData.getData('Text');
-      } else if (e.clipboardData && e.clipboardData.getData) {
-          pastedText = e.clipboardData.getData('text/plain');
-          e.clipboardData.clearData ("text/plain");
-      }
-      const splittedText =  pastedText.split(/[\s, ]+/);
-      this.addEmail(splittedText);
-    }
-      input.value = '';
+    const COMMA_REGEX =/[,]+/;
+    const commaPresent = COMMA_REGEX.test(input.value);
 
-      return false;
+    if(commaPresent){
+      const splittedText =  input.value.split(',').filter(i => i);
+      this.addEmail(splittedText);
+  
+      return input.value = '';
+    }
+
+    return;
   }
 }
