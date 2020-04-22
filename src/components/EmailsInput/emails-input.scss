@@ -56,6 +56,10 @@
       font-size: 14px;
       color: #c3c2cf;
     }
+
+    &::-ms-clear {
+      display: none;
+    }
   }
 }
 
