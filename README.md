@@ -29,13 +29,13 @@ Demo site avaliable here:
 
 ### option params & avaliable methods
 
-**placeholder** *string*  | input placeholder text | not required <br />
-**className** *string*  additional component class name(s) | not required <br />
-**function** *function*  callback function for email list changes, returning an array with entered emails and the validity of the emails | not required
+**placeholder** | *string* | input placeholder text | not required <br />
+**className** | *string* | additional component class name(s) | not required <br />
+**function** | *function* | callback function for email list changes, returning an array with entered emails and the validity of the emails | not required
 
-**addEmail(string || array(strings))** *function* | validates then add the given string or array of strings to the emaiList and display it/them in the emailsInput component <br />
-**replaceEmail(string || array(strings))** *function* | removes the already entered emails from the emailList and emailsInput component and add the given string or array of strings to the emaiList and display it in the emailsInput component <br />
-**getAllEmails()** *function* returns all entered email in a list of objects and their validity. ```[{email: string, isValid: bool }]```
+**addEmail(string || array(strings))** | *function* | validates then add the given string or array of strings to the emaiList and display it/them in the emailsInput component <br />
+**replaceEmail(string || array(strings))** | *function* | removes the already entered emails from the emailList and emailsInput component and add the given string or array of strings to the emaiList and display it in the emailsInput component <br />
+**getAllEmails()** | *function* returns all entered email in a list of objects and their validity. ```[{email: string, isValid: bool }]```
 
 ## Local development
 
