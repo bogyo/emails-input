@@ -18,7 +18,7 @@ module.exports = {
         libraryTarget: 'umd',
         globalObject: '(typeof self !== "undefined" ? self : this)',
         libraryExport: 'default',
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'docs'),
         filename: 'emails-input.js',
         publicPath: config.get('publicPath')
     },
