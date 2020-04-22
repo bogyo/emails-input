@@ -67,6 +67,8 @@ export default class EmailsInput {
     if(this.onChange) {
       this.onChange(this.emailList);
     }
+
+    return block;
   }
 
   removeBlock(e, block){ 
@@ -92,7 +94,6 @@ export default class EmailsInput {
 
   addEmailByInput = input => {
     this.createBlock(input.value);
-    
     return input.value = '';
   }
 
