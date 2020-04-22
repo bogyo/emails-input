@@ -53,5 +53,5 @@ Demo site avaliable here: https://bogyo.github.io/emails-input
 ### Build
 
 1. `npm run build` 
-1. Built version will be found under `docs` directory (for github pages)
+1. Built version will be found under `docs` directory (for github pages, not configurable to different directory)
 
