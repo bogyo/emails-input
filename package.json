@@ -1,0 +1,57 @@
+{
+  "private": true,
+  "name": "emails-input",
+  "version": "1.0.1",
+  "description": "",
+  "main": "dist/index.html",
+  "scripts": {
+    "build": "NODE_ENV=production webpack",
+    "start": "webpack-dev-server",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bogyo/emails-input.git"
+  },
+  "keywords": [],
+  "author": "Katinka Orosz",
+  "license": "MIT",
+  "homepage": "http://bogyo.github.io/emails-input",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-proposal-decorators": "^7.7.4",
+    "@babel/plugin-proposal-export-default-from": "^7.7.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.7.4",
+    "@babel/plugin-proposal-private-methods": "^7.8.3",
+    "@babel/plugin-transform-arrow-functions": "^7.8.3",
+    "@babel/plugin-transform-async-to-generator": "^7.7.4",
+    "@babel/plugin-transform-runtime": "^7.7.6",
+    "@babel/preset-env": "^7.9.5",
+    "autoprefixer": "^9.7.3",
+    "babel-jest": "^25.4.0",
+    "babel-loader": "^8.1.0",
+    "config": "^3.2.4",
+    "css-loader": "^3.3.0",
+    "cssnano": "^4.1.10",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^25.4.0",
+    "node-sass": "^4.13.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.1",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "jest": {
+    "testMatch": [
+      "**/__tests__/*.js"
+    ],
+    "moduleNameMapper": {
+      "\\.(css|less|sass|scss)$": "identity-obj-proxy"
+    }
+  }
+}
