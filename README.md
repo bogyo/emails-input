@@ -54,4 +54,5 @@ Demo site avaliable here: https://bogyo.github.io/emails-input
 
 1. `npm run build` 
 1. Built version will be found under `docs` directory (for github pages, not configurable to different directory)
+1. (I also added `dist` directory just in case, webpack build goes to `docs` to make it avaliable on github pages immediately after pushing/merging branches)
 
