@@ -34,9 +34,7 @@
     border: none;
     outline: none;
     vertical-align: middle;
-    background: url('data:image/svg+xml,<svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0.8L7.2 0L4 3.2L0.8 0L0 0.8L3.2 4L0 7.2L0.8 8L4 4.8L7.2 8L8 7.2L4.8 4L8 0.8Z" fill="#050038"/>
-    </svg>') center center no-repeat;
+    background: url('data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%228%22%20height%3D%228%22%20viewBox%3D%220%200%208%208%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M8%200.8L7.2%200L4%203.2L0.8%200L0%200.8L3.2%204L0%207.2L0.8%208L4%204.8L7.2%208L8%207.2L4.8%204L8%200.8Z%22%20fill%3D%22%23050038%22%2F%3E%0A%20%20%20%20%3C%2Fsvg%3E') center center no-repeat;
     cursor: pointer;
   }
 
