@@ -1,6 +1,6 @@
 # Miro frontend assessment - EmailsInput
 
-Demo site avaliable here: 
+Demo site avaliable here: https://bogyo.github.io/emails-input/
 
 ## Example Usage
 
